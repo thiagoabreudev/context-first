@@ -13,7 +13,13 @@
     "build": "turbo build",
     "test": "turbo test",
     "lint": "turbo lint",
-    "clean": "turbo clean && rm -rf node_modules"
+    "clean": "turbo clean && rm -rf node_modules",
+    "db:up": "docker-compose up -d",
+    "db:down": "docker-compose down",
+    "db:logs": "docker-compose logs -f",
+    "db:reset": "docker-compose down -v && docker-compose up -d",
+    "db:mongo": "docker exec -it context-first-mongodb mongosh -u admin -p dev_password_change_in_production",
+    "db:redis": "docker exec -it context-first-redis redis-cli -a dev_redis_password"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.14.0",

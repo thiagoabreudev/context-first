@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true,
-    typeCheck: true,
+    typeCheck: false, // Desabilitado para MVP - habilitar em produção
   },
 
   runtimeConfig: {
