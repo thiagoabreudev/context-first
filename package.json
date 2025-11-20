@@ -1,0 +1,32 @@
+{
+  "name": "context-first",
+  "version": "0.1.0",
+  "description": "AI Development Governance & Orchestration Platform",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"pnpm dev:frontend\" \"pnpm dev:backend\" --names \"FRONT,BACK\" --prefix-colors \"blue,green\"",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:backend": "cd packages/backend && source venv/bin/activate && uvicorn src.main:app --reload --port 8000",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.15.0",
+    "prettier": "^3.3.3",
+    "turbo": "^2.3.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}

@@ -1,0 +1,19 @@
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pydantic==2.9.2
+pydantic-settings==2.6.0
+python-dotenv==1.0.1
+
+# TODO: Add database clients in IAD-8
+# motor  # MongoDB async
+# redis  # Redis client
+# boto3  # AWS S3
+
+# TODO: Add auth in IAD-10
+# clerk-backend-sdk
+
+# Development
+pytest==8.3.3
+pytest-asyncio==0.24.0
+black==24.10.0
+ruff==0.8.0
