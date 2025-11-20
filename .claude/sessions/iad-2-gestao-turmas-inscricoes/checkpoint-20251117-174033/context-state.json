@@ -1,0 +1,63 @@
+{
+  "checkpoint_id": "checkpoint-20251117-174033",
+  "timestamp": "2025-11-17T17:40:33",
+  "context": {
+    "tokens_used": 81320,
+    "tokens_total": 200000,
+    "percentage": 40.66,
+    "status": "healthy"
+  },
+  "feature": {
+    "name": "iad-2-gestao-turmas-inscricoes",
+    "branch": "feat/iad-2-gestao-turmas-inscricoes",
+    "phase": "FASE 3 - Molecules",
+    "status": "completed"
+  },
+  "progress": {
+    "phases_completed": 3,
+    "phases_total": 7,
+    "percentage": 42.86
+  },
+  "metrics": {
+    "files_created": 29,
+    "total_lines": 4871,
+    "tests_passing": 362,
+    "tests_total": 362,
+    "test_duration_ms": 915,
+    "coverage_percentage": 100
+  },
+  "components": {
+    "atoms": [
+      "TButton",
+      "TSpinner",
+      "TLabel",
+      "TInput",
+      "TTextarea",
+      "TBadge"
+    ],
+    "molecules": [
+      "FormField",
+      "PriceDisplay",
+      "DateDisplay",
+      "StatusBadge",
+      "WorkshopCard"
+    ],
+    "organisms": [],
+    "pages": []
+  },
+  "next_phase": {
+    "name": "FASE 4 - Composables",
+    "estimated_tokens": 15000,
+    "tasks": [
+      "Create useFirestore.ts",
+      "Create useWorkshops.ts",
+      "Create useEnrollments.ts",
+      "Write tests for composables"
+    ]
+  },
+  "previous_checkpoints": [
+    "checkpoint-20251117-170100",
+    "checkpoint-20251117-164909",
+    "checkpoint-20251117-164902"
+  ]
+}

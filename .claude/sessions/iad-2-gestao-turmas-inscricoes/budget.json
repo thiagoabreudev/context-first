@@ -1,0 +1,44 @@
+{
+  "feature": "iad-2-gestao-turmas-inscricoes",
+  "budget_tokens": 60000,
+  "budget_percentage": 30,
+  "created_at": "2025-11-17T00:00:00Z",
+  "alerts": {
+    "warning": 48000,
+    "critical": 54000,
+    "exceeded": 60000
+  },
+  "rationale": "Feature complexa com múltiplas páginas, integração de pagamento, sistema de reservas e backoffice administrativo completo",
+  "checkpoints": [
+    {
+      "phase": "FASE 1: Types e Schemas",
+      "estimated_tokens": 8000,
+      "description": "Types TypeScript e schemas Zod com testes"
+    },
+    {
+      "phase": "FASE 2: Atoms",
+      "estimated_tokens": 10000,
+      "description": "Componentes básicos reutilizáveis"
+    },
+    {
+      "phase": "FASE 3: Molecules",
+      "estimated_tokens": 12000,
+      "description": "Cards, formulários, tabelas"
+    },
+    {
+      "phase": "FASE 4: Composables",
+      "estimated_tokens": 8000,
+      "description": "Lógica de negócio e Firebase"
+    },
+    {
+      "phase": "FASE 5: Pages (Public)",
+      "estimated_tokens": 10000,
+      "description": "Listagem e detalhes públicos"
+    },
+    {
+      "phase": "FASE 6: Pages (Admin)",
+      "estimated_tokens": 12000,
+      "description": "Backoffice administrativo"
+    }
+  ]
+}

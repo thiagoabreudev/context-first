@@ -1,0 +1,207 @@
+{
+  "checkpoint_id": "checkpoint-20251117-174033",
+  "timestamp": "2025-11-17T17:40:33",
+  "feature": "iad-2-gestao-turmas-inscricoes",
+  "phase": "FASE 3 - Molecules (Componentes Compostos)",
+  "status": "completed",
+  "files": [
+    {
+      "path": "types/workshop.ts",
+      "phase": "FASE 1",
+      "type": "types",
+      "lines": 47
+    },
+    {
+      "path": "types/enrollment.ts",
+      "phase": "FASE 1",
+      "type": "types",
+      "lines": 53
+    },
+    {
+      "path": "schemas/enrollment.schema.ts",
+      "phase": "FASE 1",
+      "type": "schemas",
+      "lines": 89
+    },
+    {
+      "path": "schemas/workshop.schema.ts",
+      "phase": "FASE 1",
+      "type": "schemas",
+      "lines": 141
+    },
+    {
+      "path": "vitest.config.ts",
+      "phase": "FASE 1",
+      "type": "config",
+      "lines": 22
+    },
+    {
+      "path": "tests/unit/schemas/enrollment.spec.ts",
+      "phase": "FASE 1",
+      "type": "tests",
+      "lines": 165,
+      "tests": 18
+    },
+    {
+      "path": "tests/unit/schemas/workshop.spec.ts",
+      "phase": "FASE 1",
+      "type": "tests",
+      "lines": 158,
+      "tests": 40
+    },
+    {
+      "path": "components/atoms/TButton.vue",
+      "phase": "FASE 2",
+      "type": "component",
+      "lines": 93
+    },
+    {
+      "path": "components/atoms/TSpinner.vue",
+      "phase": "FASE 2",
+      "type": "component",
+      "lines": 71
+    },
+    {
+      "path": "components/atoms/TLabel.vue",
+      "phase": "FASE 2",
+      "type": "component",
+      "lines": 69
+    },
+    {
+      "path": "components/atoms/TInput.vue",
+      "phase": "FASE 2",
+      "type": "component",
+      "lines": 147
+    },
+    {
+      "path": "components/atoms/TTextarea.vue",
+      "phase": "FASE 2",
+      "type": "component",
+      "lines": 139
+    },
+    {
+      "path": "components/atoms/TBadge.vue",
+      "phase": "FASE 2",
+      "type": "component",
+      "lines": 76
+    },
+    {
+      "path": "tests/unit/components/atoms/TButton.spec.ts",
+      "phase": "FASE 2",
+      "type": "tests",
+      "lines": 237,
+      "tests": 24
+    },
+    {
+      "path": "tests/unit/components/atoms/TSpinner.spec.ts",
+      "phase": "FASE 2",
+      "type": "tests",
+      "lines": 217,
+      "tests": 20
+    },
+    {
+      "path": "tests/unit/components/atoms/TLabel.spec.ts",
+      "phase": "FASE 2",
+      "type": "tests",
+      "lines": 154,
+      "tests": 16
+    },
+    {
+      "path": "tests/unit/components/atoms/TInput.spec.ts",
+      "phase": "FASE 2",
+      "type": "tests",
+      "lines": 347,
+      "tests": 34
+    },
+    {
+      "path": "tests/unit/components/atoms/TTextarea.spec.ts",
+      "phase": "FASE 2",
+      "type": "tests",
+      "lines": 375,
+      "tests": 35
+    },
+    {
+      "path": "tests/unit/components/atoms/TBadge.spec.ts",
+      "phase": "FASE 2",
+      "type": "tests",
+      "lines": 314,
+      "tests": 31
+    },
+    {
+      "path": "components/molecules/FormField.vue",
+      "phase": "FASE 3",
+      "type": "component",
+      "lines": 118
+    },
+    {
+      "path": "components/molecules/PriceDisplay.vue",
+      "phase": "FASE 3",
+      "type": "component",
+      "lines": 88
+    },
+    {
+      "path": "components/molecules/DateDisplay.vue",
+      "phase": "FASE 3",
+      "type": "component",
+      "lines": 143
+    },
+    {
+      "path": "components/molecules/StatusBadge.vue",
+      "phase": "FASE 3",
+      "type": "component",
+      "lines": 66
+    },
+    {
+      "path": "components/molecules/WorkshopCard.vue",
+      "phase": "FASE 3",
+      "type": "component",
+      "lines": 220
+    },
+    {
+      "path": "tests/unit/components/molecules/FormField.spec.ts",
+      "phase": "FASE 3",
+      "type": "tests",
+      "lines": 324,
+      "tests": 34
+    },
+    {
+      "path": "tests/unit/components/molecules/PriceDisplay.spec.ts",
+      "phase": "FASE 3",
+      "type": "tests",
+      "lines": 201,
+      "tests": 21
+    },
+    {
+      "path": "tests/unit/components/molecules/DateDisplay.spec.ts",
+      "phase": "FASE 3",
+      "type": "tests",
+      "lines": 291,
+      "tests": 27
+    },
+    {
+      "path": "tests/unit/components/molecules/StatusBadge.spec.ts",
+      "phase": "FASE 3",
+      "type": "tests",
+      "lines": 254,
+      "tests": 29
+    },
+    {
+      "path": "tests/unit/components/molecules/WorkshopCard.spec.ts",
+      "phase": "FASE 3",
+      "type": "tests",
+      "lines": 323,
+      "tests": 33
+    }
+  ],
+  "summary": {
+    "total_files": 29,
+    "total_lines": 4871,
+    "total_tests": 362,
+    "phases_completed": 3,
+    "components": {
+      "atoms": 6,
+      "molecules": 5
+    },
+    "test_files": 13
+  }
+}
