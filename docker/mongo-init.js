@@ -39,13 +39,26 @@ db.createCollection('demands', {
   }
 });
 
+db.createCollection('metaspecs');
 db.createCollection('checkpoints');
 
-// Criar índices para performance
+// Criar índices para performance (IAD-7)
+// projects collection
+db.projects.createIndex({ id: 1 }, { unique: true });
 db.projects.createIndex({ user_id: 1, created_at: -1 });
+
+// demands collection
+db.demands.createIndex({ id: 1 }, { unique: true });
 db.demands.createIndex({ project_id: 1, status: 1 });
 db.demands.createIndex({ project_id: 1, created_at: -1 });
-db.checkpoints.createIndex({ project_id: 1, created_at: -1 });
+
+// metaspecs collection
+db.metaspecs.createIndex({ id: 1 }, { unique: true });
+db.metaspecs.createIndex({ demand_id: 1, version: -1 });
+
+// checkpoints collection
+db.checkpoints.createIndex({ id: 1 }, { unique: true });
+db.checkpoints.createIndex({ demand_id: 1, created_at: -1 });
 db.checkpoints.createIndex({ expires_at: 1 }, { expireAfterSeconds: 0 }); // TTL index
 
 // Criar usuário de aplicação (não root)
@@ -61,6 +74,6 @@ db.createUser({
 });
 
 print('✅ MongoDB initialization complete!');
-print('Collections created: projects, demands, checkpoints');
-print('Indexes created for performance');
+print('Collections created: projects, demands, metaspecs, checkpoints');
+print('Indexes created for performance (including unique indexes on id fields)');
 print('Application user created: context_first_app');
